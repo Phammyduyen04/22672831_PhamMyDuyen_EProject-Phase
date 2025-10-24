@@ -113,7 +113,7 @@ jobs:
       needs: [test-auth, test-product]
       runs-on: ubuntu-latest
       env:
-        DOCKER_USERNAME: 3002tad
+        DOCKER_USERNAME: phammyduyen04
       strategy:
         matrix:
           service: [auth, product, order, api-gateway]
@@ -138,7 +138,7 @@ jobs:
           context: ./${{ matrix.service }}
           file: ./${{ matrix.service }}/Dockerfile
           push: true
-          tags: 3002tad/eproject-${{ matrix.service }}:latest
+          tags: phammyduyen04/eproject-${{ matrix.service }}:latest
           platforms: linux/amd64
           cache-from: type=gha
           cache-to: type=gha,mode=max
