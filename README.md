@@ -16,7 +16,8 @@ The project is structured into several key components:
 
 Additionally, the project includes configuration files for Docker (`docker-compose.yml`), environment settings (`.env`), and version control setup (`.git`, `.gitignore`).
 
-EProject-Phase/
+```bash
+Docker_Test_V4/
 │
 ├── .github/workflows/
 │   └── test.yml             # CI/CD pipeline
@@ -44,7 +45,6 @@ EProject-Phase/
 │
 ├── docker-compose.yml       # Local development setup
 └── README.md
-
 
 ## Testing with Postman
 
