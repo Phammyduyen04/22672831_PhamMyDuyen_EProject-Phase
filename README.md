@@ -17,28 +17,34 @@ The project is structured into several key components:
 Additionally, the project includes configuration files for Docker (`docker-compose.yml`), environment settings (`.env`), and version control setup (`.git`, `.gitignore`).
 
 EProject-Phase/
+│
 ├── .github/workflows/
-│   └── test.yml                 # CI/CD pipeline
-├── auth/
+│   └── test.yml             # CI/CD pipeline
+│
+├── auth/                    # Authentication Service
 │   ├── src/
-│   │   ├── controllers/         # Auth business logic
-│   │   ├── routes/             # API endpoints
-│   │   ├── services/           # Core auth services
-│   │   └── test/               # Auth tests
+│   │   ├── controllers/     # Auth business logic
+│   │   ├── routes/          # API endpoints
+│   │   ├── services/        # Core auth services
+│   │   └── test/            # Auth tests
 │   ├── Dockerfile
 │   └── package.json
-├── product/
+│
+├── product/                 # Product Service
 │   ├── src/
-│   │   ├── controllers/        # Product business logic
-│   │   ├── routes/            # API endpoints
-│   │   ├── services/          # Core product services
-│   │   └── test/              # Product tests
+│   │   ├── controllers/     # Product business logic
+│   │   ├── routes/          # API endpoints
+│   │   ├── services/        # Core product services
+│   │   └── test/            # Product tests
 │   ├── Dockerfile
 │   └── package.json
-├── order/                     # Future service
-├── api-gateway/              # Future service
-├── docker-compose.yml        # Local development
+│
+├── order/                   # Future service
+├── api-gateway/             # Future service
+│
+├── docker-compose.yml       # Local development setup
 └── README.md
+
 
 ## Testing with Postman
 
