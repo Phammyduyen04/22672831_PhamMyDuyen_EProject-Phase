@@ -119,6 +119,3 @@ Once the services are up and running, you can test the API endpoints using Postm
 3. Commit your changes and push them.
 4. Submit a pull request.
 
-## License
-
-This project is licensed under the MIT License.
